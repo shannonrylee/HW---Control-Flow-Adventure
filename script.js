@@ -1,3 +1,5 @@
+replay = true
+do {
 let gameStart = prompt(`Hi! Would you like to go on an adventure?`);
 if (gameStart === `yes`) {
   alert(`Great! Lets go!`);
@@ -5,7 +7,6 @@ if (gameStart === `yes`) {
   alert(`Ok, maybe next time!`)=null;
   console.log(gameStart);
 }
-
 let destinationOne = prompt(`Great! A nice hike or walk up the beach?`);
 if (destinationOne === `hike`) {
   alert(
@@ -71,9 +72,15 @@ if (destinationSix === `yes`) {
 let destinationSeven = prompt(
   `I am so glad we made it, on the scale from 1-10. How gorgeous is this view?`
 );
-for (let i = 0; i <= 11; ) {
+for (let i = 0; i <= 11;) {
   alert(`Ah! Same!`);
   console.log(destinationSeven);
 }
-
-// need help switch & repeat.
+const repeat = prompt(`Wanna play again?`) 
+if ( repeat === `y`) {
+  replay = true
+} else if 
+  (repeat === `n`){ 
+    replay = false
+}
+} while (replay == true)
